@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
@@ -16,3 +16,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+/* .home {
+  background-image: require("../assets/logo.png");
+  background-color: red;
+} */
+</style>
