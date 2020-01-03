@@ -3,12 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-// import Cookies from "js-cookie";
 import storage from "./utils/storage";
 import ElementUI from "element-ui";
 import i18n from "./lang";
 
-// import "./styles/element-variables.scss";
+import "./styles/variables.scss";
 
 Vue.config.productionTip = false;
 
