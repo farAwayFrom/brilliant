@@ -16,6 +16,8 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
+    "@types/node": "^13.1.1",
+    "@types/webpack": "^4.41.0",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-e2e-nightwatch": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
@@ -33,7 +35,11 @@
     "eslint-plugin-vue": "^5.0.0",
     "geckodriver": "^1.19.1",
     "prettier": "^1.19.1",
-    "vue-template-compiler": "^2.6.10"
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "eslintConfig": {
     "root": true,
