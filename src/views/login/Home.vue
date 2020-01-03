@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     111111111111111
+    <el-input placeholder="请输入内容"></el-input>
     <!-- <div class="login-container">
       <el-form
         ref="loginForm"
