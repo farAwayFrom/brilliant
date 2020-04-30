@@ -283,6 +283,7 @@ $cursor: #fff;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     color: #454545;
+    margin-bottom: 20px;
 
     .el-form-item__error {
       color: #ff4949;
@@ -290,8 +291,8 @@ $cursor: #fff;
       line-height: 1;
       padding-top: 4px;
       position: absolute;
-      top: 75%;
-      left: 0;
+      // top: 29%;
+      // left: 36px;
     }
   }
 }
@@ -329,7 +330,7 @@ $light_gray: #fff;
 
   .tips {
     font-size: 14px;
-    color: #fff;
+    color: $bg;
     margin-bottom: 10px;
 
     span {

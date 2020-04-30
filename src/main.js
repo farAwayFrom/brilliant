@@ -2,12 +2,13 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import "./styles/element-variables.scss";
 
 import storage from "./utils/storage";
 import ElementUI from "element-ui";
 import i18n from "./lang";
 
-import "./styles/variables.scss";
+// import "./styles/variables.scss";
 
 Vue.config.productionTip = false;
 
