@@ -190,6 +190,7 @@ export default {
       });
     },
     handleLogin() {
+      // vue 用箭头函数报错
       this.$refs.loginForm.validate(valid => {
         if (valid) {
           this.loading = true;
