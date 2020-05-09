@@ -195,7 +195,7 @@ export default {
         if (valid) {
           that.loading = true
           that.$store
-            .dispatch('user/login', that.loginForm)
+            .dispatch('login', that.loginForm) // 此处的login 为 store\modules\user.js 中action 里的方法名
             .then(() => {
               that.$router.push({
                 path: that.redirect || '/',

@@ -31,8 +31,6 @@ const mutations = {
 const actions = {
   // user login
   login({ commit }, userInfo) {
-    console.log('333333333333333')
-
     const { username, password } = userInfo
     return new Promise((resolve, reject) => {
       login({ username: username.trim(), password: password })
