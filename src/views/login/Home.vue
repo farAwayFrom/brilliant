@@ -189,22 +189,21 @@ export default {
       })
     },
     handleLogin() {
-      // vue 用箭头函数报错
-      const that = this
-      that.$refs.loginForm.validate(valid => {
+      // 在浏览器中debug显示为 undefined，实际打印出来this指向正常
+      this.$refs.loginForm.validate(valid => {
         if (valid) {
-          that.loading = true
-          that.$store
-            .dispatch('login', that.loginForm) // 此处的login 为 store\modules\user.js 中action 里的方法名
+          this.loading = true
+          this.$store
+            .dispatch('login', this.loginForm) // 此处的login 为 store\modules\user.js 中action 里的方法名
             .then(() => {
-              that.$router.push({
-                path: that.redirect || '/',
-                query: that.otherQuery
+              this.$router.push({
+                path: this.redirect || '/',
+                query: this.otherQuery
               })
-              that.loading = false
+              this.loading = false
             })
             .catch(() => {
-              that.loading = false
+              this.loading = false
             })
         } else {
           return false
