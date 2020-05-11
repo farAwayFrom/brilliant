@@ -1,6 +1,7 @@
 import { login, logout, getInfo } from '@/views/login/loginApi'
 import { getToken, setToken, removeToken } from '@/utils/auth'
-import router, { resetRouter } from '@/router'
+// import router, { resetRouter } from '@/router'
+import router from '@/router'
 
 const state = {
   token: getToken(),
@@ -85,7 +86,7 @@ const actions = {
           commit('SET_TOKEN', '')
           commit('SET_ROLES', [])
           removeToken()
-          resetRouter()
+          // resetRouter()
           resolve()
         })
         .catch(error => {
@@ -114,7 +115,7 @@ const actions = {
 
       const { roles } = await dispatch('getInfo')
 
-      resetRouter()
+      // resetRouter()
 
       // generate accessible routes map based on roles
       const accessRoutes = await dispatch('permission/generateRoutes', roles, {
