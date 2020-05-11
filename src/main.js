@@ -12,10 +12,10 @@ import i18n from './lang'
 
 Vue.config.productionTip = false
 
-// if (process.env.NODE_ENV === 'production') {
-//   console.log(44444)
-//   // mockXHR()
-// }
+if (process.env.NODE_ENV === 'development') {
+  // 在mock文件下，必须有index.js文件才不会报错
+  require('./mock')
+}
 
 Vue.use(ElementUI, {
   size: storage.cookie.get('size') || 'medium', // set element-ui default size
