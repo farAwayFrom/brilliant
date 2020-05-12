@@ -196,6 +196,7 @@ export default {
           this.$store
             .dispatch('login', this.loginForm) // 此处的login 为 store\modules\user.js 中action 里的方法名
             .then(() => {
+              //  Uncaught (in promise) NavigationDuplicated 错误，重新install nodemodules
               console.log(this)
               this.$router.push({
                 path: this.redirect || '/',
