@@ -7,10 +7,13 @@ import './styles/element-variables.scss'
 import storage from './utils/storage'
 import ElementUI from 'element-ui'
 import i18n from './lang'
+import { systemData } from './config/menu'
 
 // import "./styles/variables.scss";
 
 Vue.config.productionTip = false
+
+Vue.prototype.SYS_MENU = systemData
 
 if (process.env.NODE_ENV === 'development') {
   // 在mock文件下，必须有index.js文件才不会报错

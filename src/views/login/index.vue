@@ -133,7 +133,7 @@ export default {
       capsTooltip: false,
       loading: false,
       showDialog: false,
-      redirect: undefined,
+      redirect: '/home',
       otherQuery: {}
     }
   },
@@ -197,11 +197,7 @@ export default {
             .dispatch('login', this.loginForm) // 此处的login 为 store\modules\user.js 中action 里的方法名
             .then(() => {
               //  Uncaught (in promise) NavigationDuplicated 错误，重新install nodemodules
-              console.log(this)
-              this.$router.push({
-                path: this.redirect || '/',
-                query: this.otherQuery
-              })
+              this.$router.replace({ path: '/overview' })
               this.loading = false
             })
             .catch((e) => {
