@@ -1,12 +1,12 @@
-import Vue from "vue";
-import VueI18n from "vue-i18n";
-import storage from "@/utils/storage";
-import elementEnLocale from "element-ui/lib/locale/lang/en";
-import elementZhLocale from "element-ui/lib/locale/lang/zh-CN";
-import enLocale from "./en";
-import zhLocale from "./zh";
+import Vue from 'vue'
+import VueI18n from 'vue-i18n'
+import storage from '@/utils/storage'
+import elementEnLocale from 'element-ui/lib/locale/lang/en'
+import elementZhLocale from 'element-ui/lib/locale/lang/zh-CN'
+import enLocale from './en'
+import zhLocale from './zh'
 
-Vue.use(VueI18n);
+Vue.use(VueI18n)
 
 const messages = {
   en: {
@@ -17,11 +17,11 @@ const messages = {
     ...zhLocale,
     ...elementZhLocale
   }
-};
+}
 
 const i18n = new VueI18n({
-  locale: storage.local.get("language") || "zh",
+  locale: storage.local.get('language') || 'zh',
   messages
-});
+})
 
-export default i18n;
+export default i18n

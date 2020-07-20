@@ -1,5 +1,5 @@
 export default {
   common: {
-    languageTest: "language test"
+    languageTest: 'language test'
   }
-};
+}
