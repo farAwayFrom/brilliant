@@ -4,6 +4,7 @@
  * authcode 权限码
  * path 路由地址
  * level 级别
+ * index 序号（菜单选中时css展示需要）
  */
 export const systemData = [
   {
@@ -11,28 +12,64 @@ export const systemData = [
     authcode: '',
     path: '/overview',
     icon: '',
+    index: '1',
     level: 1
   }, {
-    name: 'excel',
+    name: 'table',
     authcode: '',
     path: '/selectExcel',
     icon: '',
+    index: '2',
     level: 1,
     child: [
       {
-        name: 'selectExcel',
+        name: 'selectTable',
         authcode: '',
-        path: '/selectExcel',
+        path: '/selectTable',
         icon: '',
+        index: '2-1',
         level: 2
       }, {
-        name: 'dragExcel',
+        name: 'dragTable',
         authcode: '',
-        path: '/dragExcel',
+        path: '/dragTable',
         icon: '',
+        index: '2-2',
         level: 2
       }
     ]
+  }, {
+    name: 'chart',
+    authcode: '',
+    path: '/chart1',
+    icon: '',
+    index: '3',
+    level: 1,
+    child: [
+      {
+        name: 'chart1',
+        authcode: '',
+        path: '/chart1',
+        icon: '',
+        index: '3-1',
+        level: 2
+      }, {
+        name: 'chart2',
+        authcode: '',
+        path: '/chart2',
+        icon: '',
+        index: '3-2',
+        level: 2
+      }
+    ]
+  },
+  {
+    name: 'documentation',
+    authcode: '',
+    path: '/documentation',
+    icon: '',
+    index: '4',
+    level: 1
   }
 ]
 
